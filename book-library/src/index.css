@@ -111,6 +111,25 @@ a {
  text-decoration: none;
  color: black;
 }
+
 a:hover {
   color: #ff7e59;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 20px;
+  background-color: #ff7e59;
+}
+
+.navigation a {
+  color: white;
+  padding: 5px 15px;
+}
+
+.navigation a:hover {
+  color: #ff7e59;
+  background-color: white;
+  border-radius: 15px;
 }
