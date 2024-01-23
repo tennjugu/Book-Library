@@ -6,7 +6,7 @@ const HomePage = () => {
                  &quot;The reading of all good books is like conversation with the finest (people) of the past centuries.&quot;
                     <span>-René Descartes</span>
                 </h1>
-                <button>
+                <button type="submit">
                     Order Now
                 </button>
             </div>
