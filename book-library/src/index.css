@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald&family=Roboto&family=Roboto+Slab&display=swap');
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -35,7 +36,7 @@ body {
 }
 
 .logo h1{
-  color:#ff7e59;
+  color:#064e3b;
   font-size: 1.5em;
 }
 
@@ -79,7 +80,7 @@ body {
 .searchButton i {
   font-size: 25px;
   background-color: transparent;
-  color: #ff7e59;
+  color: #064e3b;
 }
 
 .searchButton i:hover {
@@ -99,7 +100,7 @@ body {
 
 .signup-section i:hover,
 .signup-section i:focus {
-  color: #ff7e59;
+  color: #064e3b;
 }
 
 .signup span {
@@ -113,23 +114,107 @@ a {
 }
 
 a:hover {
-  color: #ff7e59;
+  color: #064e3b;
 }
 
 .navigation {
   display: flex;
   justify-content: space-around;
   padding: 15px 20px;
-  background-color: #ff7e59;
+  background-color: #064e3b;
 }
 
 .navigation a {
   color: white;
   padding: 5px 15px;
+  border-radius: 15px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .navigation a:hover {
-  color: #ff7e59;
+  color: #064e3b;
   background-color: white;
-  border-radius: 15px;
+  transition: scale(1.05);
+}
+
+.homepage {
+  display: flex;
+  height: 60vh;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.leftside {
+  width: 50%;
+  align-self: center;
+}
+.leftside h1 {
+  font-size: 1.5em;
+  font-family: Roboto;
+}
+
+.leftside h1 span {
+  font-size: 0.7em;
+  display: block;
+  text-align: end;
+  font-style: italic;
+}
+
+.leftside button {
+  padding: 10px 20px;
+  border: none;
+  background: #064e3b;
+  color: white;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.leftside button:hover {
+  background: rgb(232, 227, 227);
+  color: #064e3b;
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.rightside {
+  width: 50%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../src/assets/homepage.jpg');
+}
+
+.sections {
+  background-color: #bbf7d0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(224, 221, 221, 0.1);
+  transition: transform 0.3s;
+}
+
+.sections:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.sections img {
+  width: 120px;
+  height: 70%;
+  border-radius: 5px;
+}
+
+.sections p {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #064e3b;
+}
+
+.homeBooks {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px 20px 50px;
+  background-color: #064e3b;
 }
